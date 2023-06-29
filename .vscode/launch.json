@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Tap and Barrel",
+            "request": "launch",
+            "type": "al",
+            "tenant": "tapandbarrel.com",
+            "environmentType": "Sandbox",
+            "environmentName": "SandboxCATDev-2023-06-29",
+            "startupCompany": "Tap and Barrel - Live",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}

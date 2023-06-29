@@ -1,0 +1,32 @@
+{
+  "id": "adbf33af-965b-4217-a764-82f6b5e547e5",
+  "name": "Email Customizations by Catapult",
+  "publisher": "Catapult",
+  "version": "21.2.0.1",
+  "brief": "Email Customizations by Catapult",
+  "description": "Email Customizations by Catapult",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://support.catapulterp.com",
+  "url": "https://www.catapulterp.com",
+  "logo": "./other/icon.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.2.0.0",
+  "idRanges": [
+    {
+      "from": 52400,
+      "to": 52499
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
