@@ -46,6 +46,16 @@ codeunit 52400 "CATEM Event Subscribers"
                 end;
             until ReportSelections.Next() = 0;
 
+        //>>CAT.002
+        if (CompanyInformation."CATEM Email Subject Prefix" > '') and not CompanyInformation."CATEM Subj. Prefix All Emails" then //not CompanyInformation."CATEM Subj. Prefix All Emails" because if it is true, it will get done later by OnSendViaEmailModuleOnAfterCreateMessage
+            EmailSubjectText := delchr(CompanyInformation."CATEM Email Subject Prefix" + ' ' + EmailSubjectText, '>', ' ');
+        if (CompanyInformation."CATEM Email Subject Suffix" > '') and not CompanyInformation."CATEM Subj. Suffix All Emails" then //not CompanyInformation."CATEM Subj. Suffix All Emails" because if it is true, it will get done later by OnSendViaEmailModuleOnAfterCreateMessage
+            if EmailSubjectText > '' then
+                EmailSubjectText := EmailSubjectText + ' ' + CompanyInformation."CATEM Email Subject Suffix"
+            else
+                EmailSubjectText := CompanyInformation."CATEM Email Subject Suffix";
+        //CAT.002
+
         EmailSubject := CopyStr(EmailSubjectText, 1, MaxStrLen(EmailSubject));
     end;
 
