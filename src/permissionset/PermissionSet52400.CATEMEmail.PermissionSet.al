@@ -3,12 +3,10 @@ permissionset 52400 "CATEM Email"
     // CAT.001 2023-06-29 new permission set
 
     Assignable = true;
-    Caption = 'CATWF Workflow';
+    Caption = 'CATEM Email';
 
     Permissions =
-        // tabledata "CATPR Purchase Req. Status" = RIMD,
-        // tabledata "CATPR Purchase Req. Priority" = RIMD,
-        // codeunit "CATPR Event Subscribers" = X
+        codeunit "CATEM Event Subscribers" = X
         ;
 
     //>>Examples

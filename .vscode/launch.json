@@ -9,7 +9,7 @@
             "environmentType": "Sandbox",
             "environmentName": "SandboxCATDev-2023-06-29",
             "startupCompany": "Tap and Barrel - Live",
-            "startupObjectId": 22,
+            "startupObjectId": 27,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
